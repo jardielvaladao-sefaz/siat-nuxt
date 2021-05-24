@@ -95,5 +95,3 @@ sw.*
 
 # Vim swap files
 *.swp
-
-wordpress/wp-content/cache/*
