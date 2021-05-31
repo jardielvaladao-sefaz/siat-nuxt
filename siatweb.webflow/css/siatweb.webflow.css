@@ -384,7 +384,7 @@
   padding-top: 75px;
   padding-bottom: 75px;
   background-color: #eeeded;
-  background-image: linear-gradient(156deg, rgba(193, 239, 241, 0.88), rgba(104, 173, 176, 0.85) 25%, rgba(10, 104, 108, 0.85) 40%, rgba(0, 96, 100, 0.85) 50%, rgba(31, 118, 122, 0.85) 60%, rgba(144, 200, 203, 0.25) 75%, rgba(191, 237, 239, 0.88) 100%, #c1eff1), url('/images/foto-premio-seadprev.jpg');
+  background-image: linear-gradient(156deg, rgba(193, 239, 241, 0.88), rgba(104, 173, 176, 0.85) 25%, rgba(10, 104, 108, 0.85) 40%, rgba(0, 96, 100, 0.85) 50%, rgba(31, 118, 122, 0.85) 60%, rgba(144, 200, 203, 0.25) 75%, rgba(191, 237, 239, 0.88) 100%, #c1eff1), url('../images/foto-premio-seadprev.jpg');
   background-position: 0px 0px, 100% 50%;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;

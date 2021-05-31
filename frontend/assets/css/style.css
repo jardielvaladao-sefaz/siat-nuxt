@@ -1,144 +1,43 @@
-/*!
-Theme Name: yumedigital
-Theme URI: https://yumedigital.com.br/
-Author: Jardiel Valadão
-Author URI: https://indexadigital.com
-Description: Site oficial Yume Digital
-Version: 1.0.0
-Tested up to: 5.4
-Requires PHP: 5.6
-License: GNU General Public License v2 or later
-License URI: LICENSE
-Text Domain: yumedigital
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned.
-
-yumedigital is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
-*/
-
-.w-webflow-badge { display:none !important; }
-@media screen and (min-width: 1200px) {	
-  .w-container { max-width: 1100px; }
+.body {
+  font-weight: 300;
 }
-footer .w-list-unstyled, ul {
-    padding-left: 0 !important;
-    list-style: none;
-    margin-left: 0 !important;
+.banner {
+  display: block;
+  margin-bottom: 0px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: #eeeded;
+  background-image: linear-gradient(156deg, rgba(193, 239, 241, 0.88), rgba(104, 173, 176, 0.85) 25%, rgba(10, 104, 108, 0.85) 40%, rgba(0, 96, 100, 0.85) 50%, rgba(31, 118, 122, 0.85) 60%, rgba(144, 200, 203, 0.25) 75%, rgba(191, 237, 239, 0.88) 100%, #c1eff1), url('/images/foto-premio-seadprev.jpg');
+  background-position: 0px 0px, 100% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+  font-weight: 300;
+  text-align: center;
 }
-/* Elements
---------------------------------------------- */
-
-hr {
-	background-color: #ccc;
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
+a, a:active, a:visited, a:hover{outline: none; text-decoration: none; color:#212121}
+.theme--light.v-icon {color: #222 !important;}
+.v-application .v-card a:hover{color: black;}
+.pa-status{ padding:5px; }
+.section {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 60px 0px;
 }
-
-ul,
-ol {
-	margin: 0 0 1.5em 3em;
+.img-service {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+  padding: 10px;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  -ms-grid-row-align: auto;
+  align-self: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  border-radius: 8px;
+  background-color: #c1eff1;
+  margin:0 auto;
 }
-
-ul {
-	list-style: disc;
-}
-
-ol {
-	list-style: decimal;
-}
-
-li > ul,
-li > ol {
-	margin-bottom: 0;
-	margin-left: 1.5em;
-}
-
-dt {
-	font-weight: 700;
-}
-
-dd {
-	margin: 0 1.5em 1.5em;
-}
-
-/* Make sure embeds and iframes fit their containers. */
-embed,
-iframe,
-object {
-	max-width: 100%;
-}
-figure {
-	margin: 1em 0;
-}
-table {
-	margin: 0 0 1.5em;
-	width: 100%;
-}
-
-/* Links
---------------------------------------------- */ 
-a:hover,
-a:active {
-	outline: 0;
-}
-
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-.alignleft {
-	float: left;
-	margin-right: 1.5em;
-	margin-bottom: 1.5em;
-}
-
-.alignright {
-	float: right;
-	margin-left: 1.5em;
-	margin-bottom: 1.5em;
-}
-
-.aligncenter {
-	clear: both;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 1.5em;
-}
-
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-.widget {
-	margin: 0 0 1.5em;
-}
-
-.widget select {
-	max-width: 100%;
-}
-
-.gallery:after {content:"";display:table;clear:both;}
-
-img.aligncenter, div.aligncenter, figure.aligncenter, img.wp-post-image {
-    display: block;
-    margin: 1em auto;
-    clear: both;
-    width: 100%;
-    height: auto;
-}
-img.alignright, div.alignright, figure.alignright {float:right; margin:1em 0 1em 2em;}
-img.alignleft, div.alignleft, figure.alignleft, img.wp-post-image.attachment-thumb {float:left; margin:1em 1em 2em 0;}
-figure {max-width: 100%; height: auto; margin:1em 0;}
-p img.alignright, p img.alignleft {margin-top:0;}
-
-@media (max-width:767px) {
-		img.alignright, div.alignright, figure.alignright, img.alignleft, div.alignleft, figure.alignleft, img.wp-post-image.attachment-thumb {display:block; margin:1em auto; float:none;}
-}
-
-

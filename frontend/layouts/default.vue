@@ -1,3 +1,7 @@
 <template>
-  <Nuxt keep-alive />
+  <App>
+    <Header />
+    <Nuxt keep-alive />
+    <Footer />
+  </App>
 </template>

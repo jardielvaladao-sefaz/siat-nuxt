@@ -1,3 +1,4 @@
+import colors from 'vuetify/lib/util/colors'
 import environments from './.env.js'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -29,9 +30,9 @@ export default {
     ],
     link: [
       { rel: 'shortcut icon', type: 'image/x-icon', href: '/images/favicon.png' },
-      { rel: 'profile', href: 'https://gmpg.org/xfn/11' },
-      { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,800;0,900;1,500&family=PT+Sans:wght@400;700&display=swap' }
+      { rel: 'profile', href: 'https://gmpg.org/xfn/11' }
+      /* { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap' } */
     ],
     bodyAttrs: { class: 'body' }
   },
@@ -42,10 +43,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '@/assets/css/normalize.min.css',
-    '@/assets/css/webflow.min.css',
-    '@/assets/css/siatweb.webflow.min.css',
-    '@/assets/css/style.min.css'
+    '@/assets/css/style.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -58,8 +56,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/pwa'
+    '@nuxtjs/eslint-module'
   ],
 
   publicRuntimeConfig: {
@@ -77,7 +74,26 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/axios'
+    '@nuxtjs/pwa',
+    '@nuxtjs/axios',
+    ['@nuxtjs/vuetify', {
+      icons: {
+        iconfont: 'mdi'
+      },
+      theme: {
+        themes: {
+          light: {
+            primary: colors.cyan.darken4, // #006064
+            secondary: colors.grey.darken4, // #212121
+            accent: colors.indigo.base, // #3F51B5
+            error: colors.red.darken3, // #C62828
+            info: colors.lightBlue.accent3, // #00B0FF
+            success: colors.green.accent4, // #00C853
+            warning: colors.yellow.accent4 // #FFD600
+          }
+        }
+      }
+    }]
   ],
 
   serverMiddleware: [

@@ -1,5 +1,5 @@
 const redirects = [
-  { from: '/suporte', to: '/suportes' }
+  { from: '/servico', to: '/servicos' }
 ]
 
 module.exports = function (req, res, next) {
