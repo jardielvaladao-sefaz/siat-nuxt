@@ -2,7 +2,7 @@
   <Content>
     <lazy-section>
       <div id="hero" class="banner">
-        <h2 class="display-1 white--text font-weight-bold">
+        <h2 class="display-1 white--text font-weight-medium">
           Portal de serviços do SIAT
         </h2>
       </div>
@@ -31,7 +31,7 @@
                 <div
                   class="img-service"
                 >
-                  <v-icon class="text-h2">mdi-car-side</v-icon>
+                  <img src="images/carro-3.svg" alt="">
                 </div>
                 <v-card-text>
                   <h3 class="subtitle-1 font-weight-bold">IPVA</h3>

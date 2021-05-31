@@ -41,3 +41,15 @@ a, a:active, a:visited, a:hover{outline: none; text-decoration: none; color:#212
   background-color: #c1eff1;
   margin:0 auto;
 }
+.subtitle {
+  margin-top: 0px;
+  margin-bottom: 2px;
+  font-size: 26px;
+}
+p {font-size: 17px; margin-bottom: 25px;}
+@media screen and (min-width: 1920px) {
+  .section {
+    width: 55%;
+  }
+}
+
