@@ -92,9 +92,16 @@ export default {
       if (s === '0') { return 'error' }
       if (s === '2') { return 'warning' }
       return 'success'
+    },
+    refresh () {
+      const r = async function () {
+        return await this.$nuxt.refresh()
+      }
+      setInterval(r, 5000)
     }
   }
 }
+
 </script>
 <style scoped>
 @media screen and (max-width: 1000px) {
