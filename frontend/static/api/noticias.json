@@ -1,0 +1,26 @@
+{ "noticias": [
+  {
+    "image": "/images/noticia00.jpg",
+    "thumbnail": "/images/noticia00-p-800.jpeg",
+    "title": "Lorem Ipsum has been the industry standard dummy",
+    "link": "noticia-01"
+  },
+  {
+    "image": "/images/noticia01.jpg",
+    "thumbnail": "/images/noticia01-p-800.jpeg",
+    "title": "Lorem Ipsum has been the industry standard dummy",
+    "link": "noticia-02"
+  },
+  {
+    "image": "/images/noticia02.jpg",
+    "thumbnail": "/images/noticia02-p-800.jpeg",
+    "title": "Lorem Ipsum has been the industry standard dummy",
+    "link": "noticia-03"
+  },
+  {
+    "image": "/images/noticia03.jpg",
+    "thumbnail": "/images/noticia03-p-800.jpeg",
+    "title": "Lorem Ipsum has been the industry standard dummy",
+    "link": "noticia-04"
+  }]
+  }
