@@ -61,7 +61,7 @@ export default {
 
   publicRuntimeConfig: {
     axios: {
-      baseURL: 'https://portal.sefaz.pi.gov.br'
+      baseURL: ''
     },
     pwa: {
       manifest: {
