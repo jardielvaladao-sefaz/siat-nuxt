@@ -41,6 +41,7 @@ a, a:active, a:visited, a:hover{outline: none; text-decoration: none; color:#212
   background-color: #c1eff1;
   margin:0 auto;
 }
+.img-service img{width:100%}
 .subtitle {
   margin-top: 0px;
   margin-bottom: 2px;

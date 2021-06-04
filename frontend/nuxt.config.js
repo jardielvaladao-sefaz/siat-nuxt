@@ -83,7 +83,7 @@ export default {
       theme: {
         themes: {
           light: {
-            primary: colors.cyan.darken4, // #006064
+            primary: '#004e5d', // #004e5d
             secondary: colors.grey.darken4, // #212121
             accent: colors.indigo.base, // #3F51B5
             error: colors.red.darken3, // #C62828
