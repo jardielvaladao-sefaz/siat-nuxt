@@ -58,20 +58,9 @@ export default {
   buildModules: [
     '@nuxtjs/eslint-module'
   ],
-
-  publicRuntimeConfig: {
-    axios: {
-      baseURL: ''
-    },
-    pwa: {
-      manifest: {
-        name: 'SIAT / SEFAZ-PI',
-        lang: 'pt-br',
-        useWebmanifestExtension: true
-      }
-    }
+  eslint: {
+    cache: false
   },
-
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/pwa',
@@ -95,7 +84,18 @@ export default {
       }
     }]
   ],
-
+  publicRuntimeConfig: {
+    axios: {
+      baseURL: ''
+    },
+    pwa: {
+      manifest: {
+        name: 'SIAT / SEFAZ-PI',
+        lang: 'pt-br',
+        useWebmanifestExtension: true
+      }
+    }
+  },
   serverMiddleware: [
     // Server-side redirects
     '~/serverMiddleware/redirects'
