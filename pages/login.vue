@@ -23,6 +23,9 @@
                 redirect="/painel"
                 action="/painel"
               >
+                <p class="body-1">
+                  ACESSE AGORA COM CERTIFICADO
+                </p>
                 <div class="button d-inline-flex mb-4 clear" style="width:100%; display:table;">
                   <div class="icon-certificate">
                     <v-icon dark>
@@ -43,14 +46,14 @@
                 redirect="/painel"
                 action="/painel"
               >
-                <v-text-field name="login" label="Login" placeholder="Login" required solo />
+                <v-text-field name="login" label="Login" required outlined />
+                <v-text-field name="code" label="Código de acesso" required outlined />
                 <v-text-field
                   type="password"
                   name="senha"
                   label="Senha"
-                  placeholder="Senha"
                   required
-                  solo
+                  outlined
                 />
                 <v-btn
                   x-large
@@ -79,7 +82,26 @@
   </Main>
 </template>
 <script>
-export default { layout: 'page' }
+export default {
+  layout: 'page',
+  data () {
+    return {
+      title: 'Login'
+    }
+  },
+  head () {
+    return {
+      title: this.title + ' | ' + process.env.nameApp,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Página ' + this.title + ' | ' + process.env.nameApp + ' ' + process.env.descriptionApp
+        }
+      ]
+    }
+  }
+}
 </script>
 <style scoped>
 .form-block-2 {
@@ -123,7 +145,7 @@ export default { layout: 'page' }
     display: -ms-flexbox;
     display: flex;
     width: 10%;
-    height: 220px;
+    height: 335px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;

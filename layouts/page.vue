@@ -1,9 +1,7 @@
 <template>
   <App>
     <Header />
-    <Content>
-      <Nuxt keep-alive />
-    </Content>
+    <Nuxt keep-alive />
     <Footer />
   </App>
 </template>

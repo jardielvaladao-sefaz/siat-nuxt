@@ -24,13 +24,15 @@ export default {
       { name: 'dns-prefetch', content: '//s.w.org' },
       { property: 'og:locale', content: 'pt_BR' },
       { property: 'og:type', content: 'website' },
-      { property: 'og:title', content: 'Portal de serviços SIAT / SEFAZ-PI' },
-      { property: 'og:description', content: 'Portal de serviços SIAT / SEFAZ-PI' },
-      { property: 'og:site_name', content: 'SIAT / SEFAZ-PI' },
+      { property: 'og:title', content: 'Portal de serviços SIAT WEB / SEFAZ-PI' },
+      { property: 'og:description', content: 'Portal de serviços SIAT WEB / SEFAZ-PI' },
+      { property: 'og:site_name', content: 'SIAT WEB / SEFAZ-PI' },
+      { property: 'og:image', content: '/images/webclip.png' },
       { hid: 'description', name: 'description', content: 'Portal de serviços SIAT / SEFAZ-PI' }
     ],
     link: [
       { rel: 'shortcut icon', type: 'image/x-icon', href: '/images/favicon.png' },
+      { rel: 'apple-touch-icon', href: '/images/webclip.png' },
       { rel: 'profile', href: 'https://gmpg.org/xfn/11' }
       /* { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap' } */
@@ -88,6 +90,9 @@ export default {
   ],
   publicRuntimeConfig: {
     pwa: {
+      icon: {
+        source: './images/webclip.png'
+      },
       manifest: {
         name: 'SIAT / SEFAZ-PI',
         lang: 'pt-br',
