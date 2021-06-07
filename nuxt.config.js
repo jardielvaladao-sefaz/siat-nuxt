@@ -116,5 +116,8 @@ export default {
         useShortDoctype: true
       }
     }
+  },
+  generate: {
+    fallback: true
   }
 }
