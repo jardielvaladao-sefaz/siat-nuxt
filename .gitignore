@@ -37,23 +37,18 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-nuxt/node_modules/
-nuxt/jspm_packages/
 
 # TypeScript v1 declaration files
 typings/
 
 # Optional npm cache directory
 .npm
-nuxt/.npm
 
 # Optional eslint cache
 .eslintcache
-nuxt/.eslintcache
 
 # Optional REPL history
 .node_repl_history
-nuxt/.eslintcache
 
 # Output of 'npm pack'
 *.tgz
@@ -72,8 +67,6 @@ nuxt/.eslintcache
 
 # nuxt.js build output
 .nuxt
-nuxt/.nuxt
-/nuxt/.nuxt
 
 # Nuxt generate
 dist
