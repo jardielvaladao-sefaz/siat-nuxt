@@ -53,6 +53,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     '@nuxtjs/eslint-module',
+    '@nuxtjs/svg',
     '@nuxtjs/pwa'
   ],
   eslint: {
@@ -102,8 +103,9 @@ export default {
   loading: { color: '#004e5d' },
   generate: {
     fallback: true // prevent error 404 on Netlify
-  },
+  }
   // Build Configuration: https://go.nuxtjs.dev/config-build
+  /*
   build: {
     html: {
       minify: {
@@ -119,4 +121,5 @@ export default {
       }
     }
   }
+  */
 }
