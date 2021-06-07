@@ -1,17 +1,17 @@
-# PORTAL DO NOVO SIAT EM NUXT
+# PORTAL NOVO SIAT EM NUXT
 
 ------ TERMINAL -------
 
-$ cd frontend
+#development
 
 $ yarn install
 
 $ yarn dev
 
------- CHANGELOG ------
+#production
 
-# VERSÃO 1.0.1
-- REMOÇÃO WEBFLOW.IO E INCLUSÃO DO VUETIFY COM DESIGN IDÊNTICO
+$ yarn run generate 
 
-# VERSÃO 1.0.0
-- DESIGN EM WEBFLOW.IO
+------ NETLIFY -------
+
+https://siatweb.netlify.app/
