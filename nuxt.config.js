@@ -61,9 +61,11 @@ export default {
   },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/axios',
     ['@nuxtjs/dotenv', {
       filename: process.env.NODE_ENV === 'production' ? './.env.prod' : './.env'
+    }],
+    ['@nuxtjs/axios', {
+      baseURL: process.env.BASE_URL
     }],
     ['@nuxtjs/vuetify', {
       icons: {
@@ -85,9 +87,6 @@ export default {
     }]
   ],
   publicRuntimeConfig: {
-    axios: {
-      baseURL: process.env.NODE_ENV === 'production' ? 'https://siatweb.netlify.app' : 'http://portal.siat.local'
-    },
     pwa: {
       manifest: {
         name: 'SIAT / SEFAZ-PI',
