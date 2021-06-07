@@ -85,7 +85,7 @@ export default {
   ],
   publicRuntimeConfig: {
     axios: {
-      baseURL: process.env.BASE_URL
+      baseURL: process.env.NODE_ENV === 'production' ? 'https://siatweb.netlify.app' : 'http://portal.siat.local'
     },
     pwa: {
       manifest: {
