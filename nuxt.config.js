@@ -55,11 +55,21 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     '@nuxtjs/eslint-module',
-    '@nuxtjs/svg',
-    '@nuxtjs/pwa'
+    '@nuxtjs/svg'
+
   ],
   eslint: {
-    cache: true
+    cache: false
+  },
+  pwa: {
+    meta: {
+      title: 'SIAT WEB',
+      author: 'SEFAZ-PI'
+    },
+    manifest: {
+      name: 'SIAT WEB / SEFAZ-PI',
+      lang: 'pt-br'
+    }
   },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -69,6 +79,7 @@ export default {
     ['@nuxtjs/axios', {
       baseURL: process.env.BASE_URL
     }],
+    '@nuxtjs/pwa',
     ['@nuxtjs/vuetify', {
       icons: {
         iconfont: 'mdi'
@@ -89,16 +100,7 @@ export default {
     }]
   ],
   publicRuntimeConfig: {
-    pwa: {
-      icon: {
-        source: './images/webclip.png'
-      },
-      manifest: {
-        name: 'SIAT / SEFAZ-PI',
-        lang: 'pt-br',
-        useWebmanifestExtension: true
-      }
-    }
+
   },
   serverMiddleware: [
     // Server-side redirects
