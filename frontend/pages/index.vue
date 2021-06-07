@@ -1,5 +1,5 @@
 <template>
-  <Content>
+  <Main>
     <v-carousel height="265" class="banner">
       <v-carousel-item
         v-for="(banner,i) in banners"
@@ -43,7 +43,7 @@
               justify="center"
               :class="`service status-${status_class(service.status)} text-center rounded-lg pa-7 pb-2`"
             >
-              <a :href="`${service.link}`" target="_blank" :title="service.name">
+              <a :href="`/service/${service.link}`" target="_blank" :title="service.name">
                 <div
                   class="img-service"
                 >
@@ -110,21 +110,20 @@
         </v-row>
       </v-container>
     </Section>
-  </Content>
+  </Main>
 </template>
 <script>
 export default {
   async asyncData ({ $axios }) {
     try {
-      const _services = await $axios.$get('/api/services.json')
+      const _services = await $axios.$get('/api/services-public.json')
       const _banners = await $axios.$get('/api/banners.json')
       const _noticias = await $axios.$get('/api/noticias.json')
       const result = await Promise.all([_services, _banners, _noticias])
       return {
         services: result[0].services,
         banners: result[1].banners,
-        noticias: result[2].noticias,
-        result
+        noticias: result[2].noticias
       }
     } catch (error) {
     }

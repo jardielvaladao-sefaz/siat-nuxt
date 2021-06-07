@@ -32,7 +32,8 @@ a, a:active, a:visited, a:hover{outline: none; text-decoration: none; color:#212
 .subtitle {
   margin-top: 0px;
   margin-bottom: 2px;
-  font-size: 26px;
+  font-size: 26px !important;
+  font-weight: bold !important;
 }
 .logo img {
   width: 160px;
@@ -103,6 +104,19 @@ img {
   filter: saturate(200%);
 }
 .noticias img:hover{opacity: 0.95;}
+.clear {clear:both}
+form[name=search] .v-input__slot {height: 51px; border-right: 0; width: 350px; }
+.v-application--is-ltr .v-list-item__action:first-child, .v-application--is-ltr .v-list-item__icon:first-child {
+  margin-right: 15px !important;
+}
+.v-application--is-ltr .v-list--dense.v-list--nav .v-list-group--no-action > .v-list-group__items > .v-list-item {
+  padding-left: 47px !important;
+}
+.v-toolbar__title .title-s {top: 2px; position: relative;}
+.service-name {box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);}
+.v-list-item__content .subtitle {margin-bottom: 6px !important; font-size: 27px !important;}
+.v-list-item__content .v-list-item__subtitle {font-weight: 400;}
+.v-form .col, .v-form .col-6, .v-form .col-auto, .v-form .col-md-6, .v-form .col-lg-6, .v-form .col-md-12 {margin-bottom:0 !important; padding-bottom: 0 !important;}
 @media screen and (min-width: 1920px) {
   .section {
     width: 55%;
@@ -113,4 +127,6 @@ img {
     margin: 0 15px 0 0;
   }
 }
-
+@media screen and (max-width: 1000px) {
+  form[name=search] .v-input__slot {width: 200px;}
+}

@@ -88,14 +88,14 @@
             </v-list-item-title>
           </v-list-item>
 
-          <v-list-item>
+          <v-list-item href="/sobre">
             <v-list-item-icon>
               <v-icon>mdi-information-outline</v-icon>
             </v-list-item-icon>
             <v-list-item-title>Sobre o SIAT</v-list-item-title>
           </v-list-item>
 
-          <v-list-item>
+          <v-list-item href="/noticias">
             <v-list-item-icon>
               <v-icon>mdi-newspaper-variant-outline</v-icon>
             </v-list-item-icon>

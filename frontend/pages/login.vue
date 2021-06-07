@@ -1,99 +1,82 @@
 <template>
-  <v-container class="pa-0 pa-16">
-    <v-row>
-      <v-col
-        cols="6"
-        lg="2"
-        md="12"
-        sm="12"
-      />
-      <v-col
-        cols="6"
-        lg="8"
-        md="12"
-        sm="12"
-      >
-        <div class="form-block-2 login div-block-10">
-          <div class="formulario w-form">
-            <form
-              id="wf-form-login"
-              name="wf-form-login"
-              data-name="login"
-              method="post"
-              redirect="/painel"
-              data-redirect="/painel"
-              action="/painel"
-            >
-              <div class="button">
-                <div class="icon-certificate">
-                  <img
-                    src="https://uploads-ssl.webflow.com/60a41cbcb768f76857b497f4/60b5529d4fb7cc93689e6e1e_diploma.svg"
-                    loading="lazy"
-                    height="60"
-                    width="100"
-                    alt=""
-                    class="image-4"
-                  >
-                </div><input type="submit" value="CERTIFICADO DIGITAL" data-wait="Aguarde..." class="submit-button-4-copy w-button">
-              </div><a href="#" class="link link-right-copy">Como obter o certificado digital?</a>
-            </form>
-          </div><div class="div-block-11">
-            <div class="text-block-4">
-              OU
-            </div>
-          </div><div class="formulario w-form">
-            <form
-              id="wf-form-login"
-              name="wf-form-login"
-              data-name="login"
-              method="post"
-              redirect="/painel"
-              data-redirect="/painel"
-              action="/painel"
-            >
-              <input
-                id="login"
-                type="text"
-                class="input w-input"
-                maxlength="256"
-                name="login"
-                data-name="Login"
-                placeholder="Login"
-                required=""
-              ><input
-                id="senha"
-                type="password"
-                class="input w-input"
-                maxlength="256"
-                name="senha"
-                data-name="Senha"
-                placeholder="Senha"
-                required=""
+  <Main>
+    <v-container class="pa-0 pt-16 pb-16">
+      <v-row>
+        <v-col
+          cols="6"
+          lg="2"
+          md="12"
+          sm="12"
+        />
+        <v-col
+          cols="6"
+          lg="8"
+          md="12"
+          sm="12"
+        >
+          <div class="form-block-2 login div-block-10">
+            <div class="formulario w-form">
+              <form
+                id="form-login"
+                name="form-login"
+                method="POST"
+                redirect="/painel"
+                action="/painel"
               >
-              <v-btn
-                x-large
-                color="primary"
-                dark
-                elevation="0"
-                type="submit"
-              >
-                ENTRAR
-              </v-btn>
-              <div class="div-block-6">
-                <a href="#" class="link link-right">Esqueceu a senha?</a>
+                <div class="button d-inline-flex mb-4 clear" style="width:100%; display:table;">
+                  <div class="icon-certificate">
+                    <v-icon dark>
+                      mdi-certificate-outline
+                    </v-icon>
+                  </div><input type="submit" value="CERTIFICADO DIGITAL" class="submit-button-4-copy w-button">
+                </div><a href="#" class="body-1">Como obter o certificado digital?</a>
+              </form>
+            </div><div class="div-block-11">
+              <div class="text-block-4">
+                OU
               </div>
-            </form>
+            </div><div class="formulario w-form">
+              <form
+                id="wf-form-login"
+                name="wf-form-login"
+                method="POST"
+                redirect="/painel"
+                action="/painel"
+              >
+                <v-text-field name="login" label="Login" placeholder="Login" required solo />
+                <v-text-field
+                  type="password"
+                  name="senha"
+                  label="Senha"
+                  placeholder="Senha"
+                  required
+                  solo
+                />
+                <v-btn
+                  x-large
+                  color="primary"
+                  dark
+                  elevation="0"
+                  type="submit"
+                  width="100%"
+                  class="mb-4"
+                >
+                  ENTRAR
+                </v-btn>
+                <a href="#" class="body-1">Esqueceu a senha?</a>
+              </form>
+            </div>
           </div>
-        </div>
-      </v-col>
-      <v-col
-        cols="6"
-        lg="2"
-        md="12"
-        sm="12"
-      />
-    </v-row>
-  </v-container>
+        </v-col>
+        <v-col
+          cols="6"
+          lg="2"
+          md="12"
+          sm="12"
+        />
+      </v-row>
+    </v-container>
+  </Main>
 </template>
 <script>
 export default { layout: 'page' }

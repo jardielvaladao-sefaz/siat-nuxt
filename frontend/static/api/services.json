@@ -5,12 +5,12 @@
   "demo": true,
   "services": [
   {
-  "name": "Credenciamento",
-  "version": "1.0.0",
+  "name": "DT-E",
+  "version": "1.0.2",
   "releaseDate": "2021-06-01",
   "description": "...",
   "image": "images/046-note.svg",
-  "link": "credenciamento",
+  "link": "dte",
   "status": "1"
   },
   {
@@ -23,17 +23,8 @@
   "status": "1"
   },
   {
-  "name": "DT-E",
-  "version": "1.0.2",
-  "releaseDate": "2021-06-01",
-  "description": "...",
-  "image": "images/046-note.svg",
-  "link": "dte",
-  "status": "1"
-  },
-  {
   "name": "SERVICE 01",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "releaseDate": "2021-06-01",
   "description": "...",
   "image": "images/026-search.svg",
@@ -42,7 +33,7 @@
   },
   {
   "name": "SERVICE 02",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "releaseDate": "2021-06-01",
   "description": "...",
   "image": "images/026-search.svg",
@@ -51,29 +42,199 @@
   },
   {
   "name": "SERVICE 03",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "releaseDate": "2021-06-01",
   "description": "...",
   "image": "images/026-search.svg",
   "link": "service-03",
-  "status": "0"
+  "status": "1"
   },
   {
   "name": "SERVICE 04",
-  "version": "1.0.0",
+  "version": "1.4.0",
   "releaseDate": "2021-06-01",
   "description": "...",
   "image": "images/026-search.svg",
   "link": "service-04",
-  "status": "0"
+  "status": "1"
   },
   {
   "name": "SERVICE 05",
-  "version": "1.0.0",
+  "version": "1.5.0",
   "releaseDate": "2021-06-01",
   "description": "...",
   "image": "images/026-search.svg",
   "link": "service-05",
+  "status": "1"
+  }
+  ,
+  {
+  "name": "SERVICE 06",
+  "version": "1.5.6",
+  "releaseDate": "2021-06-06",
+  "description": "...",
+  "image": "images/026-search.svg",
+  "link": "service-06",
+  "status": "1"
+  }
+  ,
+  {
+  "name": "SERVICE 07",
+  "version": "1.5.6",
+  "releaseDate": "2021-06-06",
+  "description": "...",
+  "image": "images/026-search.svg",
+  "link": "service-07",
+  "status": "1"
+  }
+  ,
+  {
+  "name": "SERVICE 08",
+  "version": "1.5.6",
+  "releaseDate": "2021-06-06",
+  "description": "...",
+  "image": "images/026-search.svg",
+  "link": "service-08",
+  "status": "1"
+  }
+  ,
+  {
+  "name": "SERVICE 09",
+  "version": "1.5.6",
+  "releaseDate": "2021-06-06",
+  "description": "...",
+  "image": "images/026-search.svg",
+  "link": "service-09",
+  "status": "1"
+  }
+  ,
+  {
+  "name": "SERVICE 10",
+  "version": "1.5.6",
+  "releaseDate": "2021-06-06",
+  "description": "...",
+  "image": "images/026-search.svg",
+  "link": "service-10",
+  "status": "1"
+  }
+  ,
+  {
+  "name": "SERVICE 11",
+  "version": "1.5.6",
+  "releaseDate": "2021-06-06",
+  "description": "...",
+  "image": "images/026-search.svg",
+  "link": "service-11",
+  "status": "1"
+  }
+  ,
+  {
+  "name": "SERVICE 12",
+  "version": "1.5.6",
+  "releaseDate": "2021-06-06",
+  "description": "...",
+  "image": "images/026-search.svg",
+  "link": "service-12",
+  "status": "1"
+  }
+  ,
+  {
+  "name": "SERVICE 13",
+  "version": "1.5.6",
+  "releaseDate": "2021-06-06",
+  "description": "...",
+  "image": "images/026-search.svg",
+  "link": "service-13",
+  "status": "1"
+  }
+  ,
+  {
+  "name": "SERVICE 14",
+  "version": "1.5.6",
+  "releaseDate": "2021-06-06",
+  "description": "...",
+  "image": "images/026-search.svg",
+  "link": "service-14",
+  "status": "1"
+  }
+  ,
+  {
+  "name": "SERVICE 15",
+  "version": "1.5.6",
+  "releaseDate": "2021-06-06",
+  "description": "...",
+  "image": "images/026-search.svg",
+  "link": "service-15",
+  "status": "1"
+  }
+  ,
+  {
+  "name": "SERVICE 16",
+  "version": "1.5.6",
+  "releaseDate": "2021-06-06",
+  "description": "...",
+  "image": "images/026-search.svg",
+  "link": "service-16",
+  "status": "1"
+  }
+  ,
+  {
+  "name": "SERVICE 17",
+  "version": "1.5.6",
+  "releaseDate": "2021-06-06",
+  "description": "...",
+  "image": "images/026-search.svg",
+  "link": "service-17",
+  "status": "0"
+  }
+  ,
+  {
+  "name": "SERVICE 18",
+  "version": "1.5.6",
+  "releaseDate": "2021-06-06",
+  "description": "...",
+  "image": "images/026-search.svg",
+  "link": "service-18",
+  "status": "0"
+  }
+  ,
+  {
+  "name": "SERVICE 19",
+  "version": "1.5.6",
+  "releaseDate": "2021-06-06",
+  "description": "...",
+  "image": "images/026-search.svg",
+  "link": "service-19",
+  "status": "1"
+  }
+  ,
+  {
+  "name": "SERVICE 20",
+  "version": "1.5.6",
+  "releaseDate": "2021-06-06",
+  "description": "...",
+  "image": "images/026-search.svg",
+  "link": "service-20",
+  "status": "1"
+  }
+  ,
+  {
+  "name": "SERVICE 21",
+  "version": "1.5.6",
+  "releaseDate": "2021-06-06",
+  "description": "...",
+  "image": "images/026-search.svg",
+  "link": "service-21",
+  "status": "1"
+  }
+  ,
+  {
+  "name": "SERVICE 22",
+  "version": "1.5.6",
+  "releaseDate": "2021-06-06",
+  "description": "...",
+  "image": "images/026-search.svg",
+  "link": "service-22",
   "status": "1"
   }
   ]
