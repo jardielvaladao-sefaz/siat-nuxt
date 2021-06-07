@@ -1,6 +1,8 @@
 import colors from 'vuetify/lib/util/colors'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  ssr: false, // false for SPA on Netlify default is true
+  target: 'static', // static for SPA on Netlify default is 'server'
   head: {
     title: 'Portal de serviços SIAT / SEFAZ-PI',
     htmlAttrs: {
@@ -35,13 +37,6 @@ export default {
     ],
     bodyAttrs: { class: 'body' }
   },
-
-  ssr: false, // false for SPA on Netlify default is true
-  generate: {
-    fallback: true // prevent error 404 on Netlify
-  },
-  target: 'static', // static for SPA on Netlify default is 'server'
-
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/css/style.css'
@@ -57,14 +52,14 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/pwa'
   ],
   eslint: {
-    cache: false
+    cache: true
   },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/pwa',
     '@nuxtjs/axios',
     ['@nuxtjs/dotenv', {
       filename: process.env.NODE_ENV === 'production' ? './.env.prod' : './.env'
@@ -80,9 +75,9 @@ export default {
             secondary: colors.grey.darken4, // #212121
             accent: colors.indigo.base, // #3F51B5
             error: colors.red.darken3, // #C62828
-            info: colors.lightBlue.accent3, // #00B0FF
+            info: colors.lightBlue.darken3, // #0277BD
             success: colors.green.accent4, // #00C853
-            warning: colors.yellow.accent4 // #FFD600
+            warning: colors.yellow.darken3 // #F9A825
           }
         }
       }
@@ -90,7 +85,7 @@ export default {
   ],
   publicRuntimeConfig: {
     axios: {
-      baseURL: process.env.NODE_ENV === 'production' ? 'https://siatweb.netlify.app' : 'http://portal.siat.local'
+      baseURL: process.env.BASE_URL
     },
     pwa: {
       manifest: {
@@ -104,7 +99,10 @@ export default {
     // Server-side redirects
     '~/serverMiddleware/redirects'
   ],
-
+  loading: { color: '#004e5d' },
+  generate: {
+    fallback: true // prevent error 404 on Netlify
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     html: {

@@ -172,12 +172,12 @@
               </v-col>
               <v-col cols="6" md="6">
                 <div class="text-right">
-                  <v-btn color="primary" @click="1">
+                  <v-btn color="info" class="mr-4" @click="1">
                     <v-icon dark left>
                       mdi-magnify
                     </v-icon> Consultar
                   </v-btn>
-                  <v-btn class="mr-4" color="warning" @click="1">
+                  <v-btn color="warning" @click="1">
                     <v-icon dark left>
                       mdi-eraser
                     </v-icon> Limpar
