@@ -15,7 +15,7 @@
             md="3"
             sm="4"
           >
-            <a :href="`/noticias/${noticia.link}`" class="link-news w-inline-block" :title="noticia.title">
+            <NuxtLink :to="`/noticias/${noticia.link}`" class="link-news w-inline-block" :title="noticia.title">
               <v-img
                 :src="`${noticia.image}?image=${i * 5 + 10}`"
                 :lazy-src="`${noticia.thumbnail}?image=${i * 5 + 10}`"
@@ -34,8 +34,10 @@
                   </v-row>
                 </template>
               </v-img>
-              <div class="body-1">{{ noticia.title }}</div>
-            </a>
+              <div class="body-1">
+                {{ noticia.title }}
+              </div>
+            </NuxtLink>
           </v-col>
         </v-row>
       </div>

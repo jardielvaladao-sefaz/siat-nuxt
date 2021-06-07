@@ -172,7 +172,7 @@
             <v-row>
               <v-col cols="6" md="6">
                 <div class="text-left">
-                  <v-btn class="mr-4" href="/service/dte">
+                  <v-btn class="mr-4" to="/service/dte" prefetch>
                     <v-icon left>
                       mdi-subdirectory-arrow-left
                     </v-icon> Voltar
@@ -222,10 +222,10 @@ export default {
         }
       }
       const breadcrumbs = [
-        { text: 'Início', disabled: false, href: '/' },
-        { text: 'Painel', disabled: false, href: '/painel' },
-        { text: 'DTE', disabled: false, href: '/service/dte' },
-        { text: title, disabled: true, href: '#' }
+        { text: 'Início', disabled: false, to: '/' },
+        { text: 'Painel', disabled: false, to: '/painel' },
+        { text: 'DTE', disabled: false, to: '/service/dte' },
+        { text: title, disabled: true, to: '#' }
       ]
       return {
         title,

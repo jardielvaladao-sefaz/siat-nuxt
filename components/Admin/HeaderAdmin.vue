@@ -8,10 +8,12 @@
       height="78"
     >
       <v-toolbar-title>
-        <a href="/" aria-current="page" class="logo white--text d-inline-flex align-center justify-content">
+        <NuxtLink to="/" aria-current="page" class="logo white--text d-inline-flex align-center justify-content">
           <img src="/images/logo-sefaz.svg" alt="" class="image">
-          <h1 class="title-s">SIAT WEB</h1>
-        </a>
+          <h1 class="title-s">
+            SIAT WEB
+          </h1>
+        </NuxtLink>
       </v-toolbar-title>
 
       <v-spacer />

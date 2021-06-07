@@ -18,7 +18,9 @@
       <v-list-item
         v-for="child in item.items"
         :key="child.title"
-        :href="`/service/dte/${child.href}`"
+        :to="`/service/dte/${child.href}`"
+        :title="child.title"
+        prefetch
       >
         <v-list-item-content>
           <v-list-item-title v-text="child.title" />

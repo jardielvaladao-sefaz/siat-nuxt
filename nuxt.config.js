@@ -103,6 +103,9 @@ export default {
   loading: { color: '#004e5d' },
   generate: {
     fallback: true // prevent error 404 on Netlify
+  },
+  router: {
+    prefetchLinks: true
   }
   // Build Configuration: https://go.nuxtjs.dev/config-build
   /*

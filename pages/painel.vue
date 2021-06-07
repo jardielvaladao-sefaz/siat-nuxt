@@ -85,23 +85,29 @@
                 justify="center"
                 :class="`service status-${status_class(service.status)} text-center rounded-lg pa-7 pb-2`"
               >
-                <a :href="`/service/${service.link}`" :title="service.name">
+                <NuxtLink :to="`/service/${service.link}`" :title="service.name">
                   <div
                     class="img-service"
                   >
                     <img :src="service.image" :alt="service.name">
                   </div>
                   <v-card-text>
-                    <h3 class="subtitle-1 font-weight-bold">{{ service.name }}</h3>
-                    <div class="ma-1">v.{{ service.version }}</div>
+                    <h3 class="subtitle-1 font-weight-bold">
+                      {{ service.name }}
+                    </h3>
+                    <div class="ma-1">
+                      v.{{ service.version }}
+                    </div>
                     <v-flex>
                       <div
                         :class="`pa-status ${status_class(service.status)} rounded-circle d-inline-block`"
                       />
-                      <div class="d-inline-block">{{ status(service.status) }}</div>
+                      <div class="d-inline-block">
+                        {{ status(service.status) }}
+                      </div>
                     </v-flex>
                   </v-card-text>
-                </a>
+                </NuxtLink>
               </v-card>
             </v-col>
           </v-row>
@@ -126,23 +132,29 @@
               justify="center"
               :class="`service status-${status_class(service.status)} text-center rounded-lg pa-7 pb-2`"
             >
-              <a :href="`/service/${service.link}`" target="_blank" :title="service.name">
+              <NuxtLink :to="`/service/${service.link}`" :title="service.name">
                 <div
                   class="img-service"
                 >
                   <img :src="service.image" :alt="service.name">
                 </div>
                 <v-card-text>
-                  <h3 class="subtitle-1 font-weight-bold">{{ service.name }}</h3>
-                  <div class="ma-1">v.{{ service.version }}</div>
+                  <h3 class="subtitle-1 font-weight-bold">
+                    {{ service.name }}
+                  </h3>
+                  <div class="ma-1">
+                    v.{{ service.version }}
+                  </div>
                   <v-flex>
                     <div
                       :class="`pa-status ${status_class(service.status)} rounded-circle d-inline-block`"
                     />
-                    <div class="d-inline-block">{{ status(service.status) }}</div>
+                    <div class="d-inline-block">
+                      {{ status(service.status) }}
+                    </div>
                   </v-flex>
                 </v-card-text>
-              </a>
+              </NuxtLink>
             </v-card>
           </v-col>
         </v-row>
