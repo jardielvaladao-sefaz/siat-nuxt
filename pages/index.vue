@@ -1,12 +1,10 @@
 <template>
   <Main>
-    <v-carousel height="265" class="banner">
+    <v-carousel cycle height="265" class="banner">
       <v-carousel-item
         v-for="(banner,i) in banners"
         :key="i"
         :src="banner.src"
-        reverse-transition="fade-transition"
-        transition="fade-transition"
         class="fill-height"
         align="center"
         justify="center"
