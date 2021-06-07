@@ -146,6 +146,12 @@
             </v-card>
           </v-col>
         </v-row>
+        <div class="text-center mt-10">
+          <v-pagination
+            v-model="page"
+            :length="6"
+          />
+        </div>
       </div>
     </Section>
   </Main>
@@ -158,6 +164,7 @@ export default {
       const _services = await $axios.$get('/api/services.json')
       return {
         services: _services.services,
+        page: 1,
         title: 'Painel de aplicações'
       }
     } catch (error) {
