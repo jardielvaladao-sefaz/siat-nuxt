@@ -1,5 +1,4 @@
 import colors from 'vuetify/lib/util/colors'
-import environments from './.env.js'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -37,9 +36,11 @@ export default {
     bodyAttrs: { class: 'body' }
   },
 
-  ssr: true,
-
-  env: environments,
+  ssr: false, // false for SPA on Netlify default is true
+  generate: {
+    fallback: true // prevent error 404 on Netlify
+  },
+  target: 'static', // static for SPA on Netlify default is 'server'
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
@@ -65,6 +66,9 @@ export default {
   modules: [
     '@nuxtjs/pwa',
     '@nuxtjs/axios',
+    ['@nuxtjs/dotenv', {
+      filename: process.env.NODE_ENV === 'production' ? './.env.prod' : './.env'
+    }],
     ['@nuxtjs/vuetify', {
       icons: {
         iconfont: 'mdi'
@@ -86,7 +90,7 @@ export default {
   ],
   publicRuntimeConfig: {
     axios: {
-      baseURL: ''
+      baseURL: process.env.NODE_ENV === 'production' ? 'https://siatweb.netlify.app' : 'http://portal.siat.local'
     },
     pwa: {
       manifest: {
@@ -116,9 +120,5 @@ export default {
         useShortDoctype: true
       }
     }
-  },
-  generate: {
-    fallback: true
-  },
-  target: 'static'
+  }
 }
