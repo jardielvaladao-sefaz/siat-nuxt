@@ -160,10 +160,10 @@ export default {
         }
       }
       const breadcrumbs = [
-        { text: 'Início', disabled: false, href: '/' },
-        { text: 'Painel', disabled: false, href: '/painel' },
-        { text: 'DTE', disabled: false, href: '/service/dte' },
-        { text: title, disabled: true, href: '#' }
+        { text: 'Início', disabled: false, to: '/' },
+        { text: 'Painel', disabled: false, to: '/painel' },
+        { text: 'DTE', disabled: false, to: '/service/dte' },
+        { text: title, disabled: true, to: '#' }
       ]
       return {
         title,

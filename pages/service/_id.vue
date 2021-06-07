@@ -69,9 +69,9 @@ export default {
         }
       }
       const breadcrumbs = [
-        { text: 'Início', disabled: false, href: '/' },
-        { text: 'Painel', disabled: false, href: '/painel' },
-        { text: title, disabled: true, href: '#' }
+        { text: 'Início', disabled: false, to: '/' },
+        { text: 'Painel', disabled: false, to: '/painel' },
+        { text: title, disabled: true, to: '#' }
       ]
       const menu = [
         {
