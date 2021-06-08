@@ -17,15 +17,13 @@
       <Menu />
     </v-navigation-drawer>
     <v-container>
-      <div class="pt-4 pa-10">
+      <div class="pt-4 pa-6">
         <v-breadcrumbs large :items="breadcrumbs" class="pl-0 ml-0" />
         <div class="mb-6 d-flex  justify-space-between">
           <h2 class="subtitle primary--text">
             Enviar Mensagem
           </h2>
-          <v-btn color="secondary" fab dark x-small class="float-right">
-            <v-icon>mdi-help</v-icon>
-          </v-btn>
+          <Popover />
         </div>
         <v-divider class="mb-10" />
         <v-form>
@@ -207,8 +205,10 @@
   </Main>
 </template>
 <script>
+import Popover from '../../../../components/Admin/Popover.vue'
 
 export default {
+  components: { Popover },
   layout: 'admin',
   async asyncData ({ params, $axios }) {
     try {

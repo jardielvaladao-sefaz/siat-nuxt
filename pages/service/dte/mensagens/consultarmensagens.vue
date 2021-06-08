@@ -17,15 +17,13 @@
       <Menu />
     </v-navigation-drawer>
     <v-container>
-      <div class="pt-4 pa-10">
+      <div class="pt-4 pa-6">
         <v-breadcrumbs large :items="breadcrumbs" class="pl-0 ml-0" />
         <div class="mb-6 d-flex  justify-space-between">
           <h2 class="subtitle primary--text">
             Consultar Mensagens
           </h2>
-          <v-btn color="secondary" fab dark x-small class="float-right">
-            <v-icon>mdi-help</v-icon>
-          </v-btn>
+          <Popover />
         </div>
         <v-divider class="mb-10" />
         <v-form>
@@ -43,7 +41,7 @@
             <v-row>
               <v-col cols="6" md="4">
                 <div class="text-center">
-                  <v-text-field solo label="Inscrição" placeholder="Inscrição" />
+                  <v-text-field filled label="Inscrição" placeholder="Inscrição" />
                 </div>
               </v-col>
 
@@ -55,11 +53,11 @@
               </v-col>
 
               <v-col cols="6" md="4">
-                <v-text-field solo label="CPF/CNPJ" placeholder="CPF/CNPJ" />
+                <v-text-field filled label="CPF/CNPJ" placeholder="CPF/CNPJ" />
               </v-col>
 
               <v-col cols="6" md="12">
-                <v-text-field solo label="Nome/Razão Social" placeholder="Nome/Razão Social" class="razao" />
+                <v-text-field filled label="Nome/Razão Social" placeholder="Nome/Razão Social" class="razao" />
               </v-col>
             </v-row>
 
@@ -76,7 +74,7 @@
             <v-row>
               <v-col cols="6" md="4">
                 <div class="text-center">
-                  <v-text-field solo label="Inscrição" placeholder="Inscrição" />
+                  <v-text-field filled label="Inscrição" placeholder="Inscrição" />
                 </div>
               </v-col>
 
@@ -88,47 +86,47 @@
               </v-col>
 
               <v-col cols="6" md="4">
-                <v-text-field solo label="CNPJ/CPF" placeholder="CNPJ/CPF" />
+                <v-text-field filled label="CNPJ/CPF" placeholder="CNPJ/CPF" />
               </v-col>
 
               <v-col cols="12">
-                <v-text-field solo label="Nome/Razão Social" placeholder="Nome/Razão Social" class="razao" />
+                <v-text-field filled label="Nome/Razão Social" placeholder="Nome/Razão Social" class="razao" />
               </v-col>
             </v-row>
 
             <v-row>
               <v-col cols="6" md="12">
-                <v-text-field solo label="Assunto" placeholder="Assunto" />
+                <v-text-field filled label="Assunto" placeholder="Assunto" />
               </v-col>
 
               <v-col cols="6" md="4">
-                <v-select v-model="select" solo :items="items" label="Origem" placeholder="Origem" />
+                <v-select v-model="select" filled :items="items" label="Origem" placeholder="Origem" />
               </v-col>
 
               <v-col cols="6" md="4">
-                <v-select v-model="select" solo :items="items" label="Status" placeholder="Status" />
+                <v-select v-model="select" filled :items="items" label="Status" placeholder="Status" />
               </v-col>
 
               <v-col cols="6" md="4">
-                <v-select v-model="select" solo :items="items" label="Prioridade" placeholder="Prioridade" />
+                <v-select v-model="select" filled :items="items" label="Prioridade" placeholder="Prioridade" />
               </v-col>
             </v-row>
 
             <v-row>
               <v-col cols="6" md="6">
-                <v-select v-model="select" solo :items="items" label="Tipo de Mensagem" placeholder="Tipo de Mensagem" />
+                <v-select v-model="select" filled :items="items" label="Tipo de Mensagem" placeholder="Tipo de Mensagem" />
               </v-col>
 
               <v-col cols="6" md="6">
-                <v-text-field solo label="Número do Documento" placeholder="Número do Documento" />
+                <v-text-field filled label="Número do Documento" placeholder="Número do Documento" />
               </v-col>
 
               <v-col cols="6" md="6">
-                <v-select v-model="select" solo :items="items" label="Com Ciência" placeholder="Com Ciência" />
+                <v-select v-model="select" filled :items="items" label="Com Ciência" placeholder="Com Ciência" />
               </v-col>
 
               <v-col cols="3" md="6">
-                <v-select v-model="select" solo :items="items" label="Sistema" placeholder="Sistema" />
+                <v-select v-model="select" filled :items="items" label="Sistema" placeholder="Sistema" />
               </v-col>
             </v-row>
 
@@ -145,7 +143,7 @@
                   <template #activator="{ on, attrs }">
                     <v-text-field
                       v-model="date1"
-                      solo
+                      filled
                       label="Periodo da Emissão da Mensagem*"
                       class="periodo"
                       placeholder="Periodo da Emissão da Mensagem*"

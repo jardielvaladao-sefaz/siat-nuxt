@@ -17,15 +17,13 @@
       <Menu />
     </v-navigation-drawer>
     <v-container>
-      <div class="pt-4 pa-10">
+      <div class="pt-4 pa-6">
         <v-breadcrumbs large :items="breadcrumbs" class="pl-0 ml-0" />
         <div class="mb-6 d-flex  justify-space-between">
           <h2 class="subtitle primary--text">
             Consulta de Mensagem - Destinatário
           </h2>
-          <v-btn color="secondary" fab dark x-small class="float-right">
-            <v-icon>mdi-help</v-icon>
-          </v-btn>
+          <Popover />
         </div>
         <v-divider class="mb-10" />
         <v-form>
@@ -43,7 +41,7 @@
             <v-row>
               <v-col cols="6" md="4">
                 <div class="text-center">
-                  <v-text-field solo label="Inscrição" placeholder="Inscrição" />
+                  <v-text-field filled label="Inscrição" />
                 </div>
               </v-col>
 
@@ -55,11 +53,11 @@
               </v-col>
 
               <v-col cols="6" md="4">
-                <v-text-field solo type="number" label="CPF/CNPJ" placeholder="CPF/CNPJ" />
+                <v-text-field filled type="number" label="CPF/CNPJ" />
               </v-col>
 
               <v-col cols="6" md="12">
-                <v-text-field solo label="Nome/Razão Social" placeholder="Nome/Razão Social" class="razao" />
+                <v-text-field filled label="Nome/Razão Social" class="razao" />
               </v-col>
             </v-row>
 
@@ -76,7 +74,7 @@
             <v-row>
               <v-col cols="6" md="4">
                 <div class="text-center">
-                  <v-text-field solo label="Inscrição" placeholder="Inscrição" />
+                  <v-text-field filled label="Inscrição" />
                 </div>
               </v-col>
 
@@ -88,25 +86,25 @@
               </v-col>
 
               <v-col cols="6" md="4">
-                <v-text-field solo type="number" label="CNPJ/CPF" placeholder="CNPJ/CPF" />
+                <v-text-field filled type="number" label="CNPJ/CPF" />
               </v-col>
 
               <v-col cols="6" md="12">
-                <v-text-field solo label="Nome/Razão Social" placeholder="Nome/Razão Social" class="razao" />
+                <v-text-field filled label="Nome/Razão Social" class="razao" />
               </v-col>
             </v-row>
 
             <v-row>
               <v-col cols="6" md="4">
-                <v-text-field solo label="Assunto" placeholder="Assunto" />
+                <v-text-field filled label="Assunto" />
               </v-col>
 
               <v-col cols="6" md="4">
-                <v-select v-model="select" solo :items="items" label="Prioridade" placeholder="Prioridade" />
+                <v-select v-model="select" filled :items="items" label="Prioridade" />
               </v-col>
 
               <v-col cols="4" md="4">
-                <v-select v-model="select" solo :items="items" label="Tipo de Mensagem" placeholder="Tipo de Mensagem" />
+                <v-select v-model="select" filled :items="items" label="Tipo de Mensagem" />
               </v-col>
             </v-row>
 
@@ -123,10 +121,9 @@
                   <template #activator="{ on, attrs }">
                     <v-text-field
                       v-model="date1"
-                      solo
+                      filled
                       label="Periodo da Emissão da Mensagem*"
                       class="periodo"
-                      placeholder="Periodo da Emissão da Mensagem*"
                       append-outer-icon="mdi-calendar"
                       readonly
                       v-bind="attrs"

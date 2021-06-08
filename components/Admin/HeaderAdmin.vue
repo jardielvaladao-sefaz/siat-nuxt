@@ -86,7 +86,8 @@
         color="white"
         dark
         outlined
-        href="/"
+        to="/login"
+        prefetch
       >
         SAIR
         <v-icon right>
