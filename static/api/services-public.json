@@ -8,7 +8,7 @@
   "name": "DT-E",
   "version": "1.0.2",
   "releaseDate": "2021-06-01",
-  "description": "...",
+  "description": "Domicílio Tributário Eletrônico",
   "image": "/images/046-note.svg",
   "link": "dte",
   "status": "1"
@@ -17,7 +17,7 @@
   "name": "IPVA",
   "version": "1.0.7",
   "releaseDate": "2021-06-01",
-  "description": "...",
+  "description": "Imposto sobre Propriedade de Veículos Automotores",
   "image": "/images/carro-3.svg",
   "link": "ipva",
   "status": "1"
@@ -26,7 +26,7 @@
   "name": "SERVICE 01",
   "version": "1.0.1",
   "releaseDate": "2021-06-01",
-  "description": "...",
+  "description": "Acesso, consulta e informação",
   "image": "/images/026-search.svg",
   "link": "service-01",
   "status": "1"
@@ -35,7 +35,7 @@
   "name": "SERVICE 02",
   "version": "1.0.2",
   "releaseDate": "2021-06-01",
-  "description": "...",
+  "description": "Acesso, consulta e informação",
   "image": "/images/026-search.svg",
   "link": "service-02",
   "status": "1"
@@ -44,7 +44,7 @@
   "name": "SERVICE 03",
   "version": "1.0.3",
   "releaseDate": "2021-06-01",
-  "description": "...",
+  "description": "Acesso, consulta e informação",
   "image": "/images/026-search.svg",
   "link": "service-03",
   "status": "0"
@@ -53,7 +53,7 @@
   "name": "SERVICE 04",
   "version": "1.4.0",
   "releaseDate": "2021-06-01",
-  "description": "...",
+  "description": "Acesso, consulta e informação",
   "image": "/images/026-search.svg",
   "link": "service-04",
   "status": "0"
@@ -62,7 +62,7 @@
   "name": "SERVICE 05",
   "version": "1.5.0",
   "releaseDate": "2021-06-01",
-  "description": "...",
+  "description": "Acesso, consulta e informação",
   "image": "/images/026-search.svg",
   "link": "service-05",
   "status": "1"
@@ -72,7 +72,7 @@
   "name": "SERVICE 06",
   "version": "1.5.6",
   "releaseDate": "2021-06-06",
-  "description": "...",
+  "description": "Acesso, consulta e informação",
   "image": "/images/026-search.svg",
   "link": "service-06",
   "status": "1"

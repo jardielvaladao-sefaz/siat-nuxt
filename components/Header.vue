@@ -4,17 +4,18 @@
       app
       color="primary"
       dark
-      min-height="78"
-      height="78"
+      min-height="100"
+      height="100"
+      class="pt-0 pb-4"
     >
       <v-app-bar-nav-icon @click="drawer = true" />
 
-      <v-toolbar-title>
+      <v-toolbar-title class="d-flex justify-content">
         <NuxtLink to="/" aria-current="page" class="logo white--text d-inline-flex align-center justify-content">
+          <img src="/images/logo.png" width="234" alt="" class="image">
           <h1 class="title-s">
             SIAT WEB
           </h1>
-          <img src="/images/logo-sefaz.svg" alt="" class="image">
         </NuxtLink>
       </v-toolbar-title>
 
@@ -23,6 +24,7 @@
       <v-btn
         color="white"
         dark
+        x-large
         outlined
         to="/login"
         prefetch

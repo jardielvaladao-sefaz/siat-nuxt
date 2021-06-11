@@ -83,7 +83,7 @@
                 elevation="2"
                 align="center"
                 justify="center"
-                :class="`service status-${status_class(service.status)} text-center rounded-lg pa-7 pb-2`"
+                :class="`service status-${status_class(service.status)} text-center rounded-lg pa-6 pb-2`"
               >
                 <NuxtLink :to="`/service/${service.link}`" :title="service.name">
                   <div
@@ -92,20 +92,22 @@
                     <img :src="service.image" :alt="service.name">
                   </div>
                   <v-card-text>
-                    <h3 class="subtitle-1 font-weight-bold">
+                    <h3 class="text-h6 font-weight-bold">
                       {{ service.name }}
                     </h3>
-                    <div class="ma-1">
-                      v.{{ service.version }}
-                    </div>
-                    <v-flex>
-                      <div
-                        :class="`pa-status ${status_class(service.status)} rounded-circle d-inline-block`"
-                      />
-                      <div class="d-inline-block">
-                        {{ status(service.status) }}
+                    <div class="grey--text text--darken-3 font-weight-light">
+                      <div class="ma-1">
+                        v{{ service.version }}
                       </div>
-                    </v-flex>
+                      <v-flex>
+                        <div
+                          :class="`pa-status ${status_class(service.status)} rounded-circle d-inline-block`"
+                        />
+                        <div class="d-inline-block">
+                          {{ status(service.status) }}
+                        </div>
+                      </v-flex>
+                    </div>
                   </v-card-text>
                 </NuxtLink>
               </v-card>
@@ -130,7 +132,7 @@
               elevation="2"
               align="center"
               justify="center"
-              :class="`service status-${status_class(service.status)} text-center rounded-lg pa-7 pb-2`"
+              :class="`service status-${status_class(service.status)} text-center rounded-lg pa-6 pb-2`"
             >
               <NuxtLink :to="`/service/${service.link}`" :title="service.name">
                 <div
@@ -139,20 +141,22 @@
                   <img :src="service.image" :alt="service.name">
                 </div>
                 <v-card-text>
-                  <h3 class="subtitle-1 font-weight-bold">
+                  <h3 class="text-h6 font-weight-bold">
                     {{ service.name }}
                   </h3>
-                  <div class="ma-1">
-                    v.{{ service.version }}
-                  </div>
-                  <v-flex>
-                    <div
-                      :class="`pa-status ${status_class(service.status)} rounded-circle d-inline-block`"
-                    />
-                    <div class="d-inline-block">
-                      {{ status(service.status) }}
+                  <div class="grey--text text--darken-3 font-weight-light">
+                    <div class="ma-1">
+                      v{{ service.version }}
                     </div>
-                  </v-flex>
+                    <v-flex>
+                      <div
+                        :class="`pa-status ${status_class(service.status)} rounded-circle d-inline-block`"
+                      />
+                      <div class="d-inline-block">
+                        {{ status(service.status) }}
+                      </div>
+                    </v-flex>
+                  </div>
                 </v-card-text>
               </NuxtLink>
             </v-card>

@@ -41,7 +41,7 @@
             <v-row>
               <v-col cols="6" md="4">
                 <div class="text-center">
-                  <v-text-field filled label="Inscrição" />
+                  <v-text-field outlined label="Inscrição" />
                 </div>
               </v-col>
 
@@ -53,11 +53,11 @@
               </v-col>
 
               <v-col cols="6" md="4">
-                <v-text-field filled type="number" label="CPF/CNPJ" />
+                <v-text-field outlined type="number" label="CPF/CNPJ" />
               </v-col>
 
               <v-col cols="6" md="12">
-                <v-text-field filled label="Nome/Razão Social" class="razao" />
+                <v-text-field outlined label="Nome/Razão Social" class="razao" />
               </v-col>
             </v-row>
 
@@ -74,7 +74,7 @@
             <v-row>
               <v-col cols="6" md="4">
                 <div class="text-center">
-                  <v-text-field filled label="Inscrição" />
+                  <v-text-field outlined label="Inscrição" />
                 </div>
               </v-col>
 
@@ -86,25 +86,25 @@
               </v-col>
 
               <v-col cols="6" md="4">
-                <v-text-field filled type="number" label="CNPJ/CPF" />
+                <v-text-field outlined type="number" label="CNPJ/CPF" />
               </v-col>
 
               <v-col cols="6" md="12">
-                <v-text-field filled label="Nome/Razão Social" class="razao" />
+                <v-text-field outlined label="Nome/Razão Social" class="razao" />
               </v-col>
             </v-row>
 
             <v-row>
               <v-col cols="6" md="4">
-                <v-text-field filled label="Assunto" />
+                <v-text-field outlined label="Assunto" />
               </v-col>
 
               <v-col cols="6" md="4">
-                <v-select v-model="select" filled :items="items" label="Prioridade" />
+                <v-select v-model="select" outlined :items="items" label="Prioridade" />
               </v-col>
 
               <v-col cols="4" md="4">
-                <v-select v-model="select" filled :items="items" label="Tipo de Mensagem" />
+                <v-select v-model="select" outlined :items="items" label="Tipo de Mensagem" />
               </v-col>
             </v-row>
 
@@ -121,7 +121,7 @@
                   <template #activator="{ on, attrs }">
                     <v-text-field
                       v-model="date1"
-                      filled
+                      outlined
                       label="Periodo da Emissão da Mensagem*"
                       class="periodo"
                       append-outer-icon="mdi-calendar"

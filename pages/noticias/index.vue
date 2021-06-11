@@ -34,7 +34,7 @@
                   </v-row>
                 </template>
               </v-img>
-              <div class="body-1">
+              <div class="headline-s">
                 {{ noticia.title }}
               </div>
             </NuxtLink>

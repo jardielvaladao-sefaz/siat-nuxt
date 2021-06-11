@@ -1,27 +1,34 @@
 <template>
   <Main>
-    <v-carousel cycle height="265" class="banner">
+    <v-carousel cycle height="320" class="banner">
       <v-carousel-item
         v-for="(banner,i) in banners"
         :key="i"
         :src="banner.src"
         class="fill-height"
-        align="center"
-        justify="center"
       >
-        <h2 class="subtitle-s">
-          {{ banner.title }}
-        </h2>
+        <div class="slide-cover">
+          <div class="section pt-4 pb-4">
+            <a :to="banner.link" :title="banner.title">
+              <h2 class="subtitle-s">
+                {{ banner.title }}
+              </h2>
+              <p class="white--text">
+                {{ banner.subtitle }}
+              </p>
+            </a>
+          </div>
+        </div>
       </v-carousel-item>
     </v-carousel>
 
     <Section id="services" class="section">
       <v-container class="pa-0">
         <div class="pb-13 justify-center text-center">
-          <h2 class="subtitle primary--text">
-            Aplicações públicas online
+          <h2 class="text-h5 font-weight-bold text-uppercase primary--text">
+            Aplicações públicas
           </h2><p class="ma-0">
-            Confira abaixo os serviços on-line do SIAT
+            Confira abaixo os serviços do SIAT
           </p>
         </div>
         <v-row>
@@ -39,7 +46,7 @@
               elevation="2"
               align="center"
               justify="center"
-              :class="`service status-${status_class(service.status)} text-center rounded-lg pa-7 pb-2`"
+              :class="`service status-${status_class(service.status)} text-center rounded-lg pa-5 pt-6 pb-2`"
             >
               <NuxtLink :to="`/service/${service.link}`" :title="service.name">
                 <div
@@ -48,20 +55,19 @@
                   <img :src="service.image" :alt="service.name">
                 </div>
                 <v-card-text>
-                  <h3 class="subtitle-1 font-weight-bold">
+                  <h3 class="text-h6 font-weight-bold">
                     {{ service.name }}
                   </h3>
-                  <div class="ma-1">
-                    v.{{ service.version }}
-                  </div>
-                  <v-flex>
-                    <div
-                      :class="`pa-status ${status_class(service.status)} rounded-circle d-inline-block`"
-                    />
-                    <div class="d-inline-block">
-                      {{ status(service.status) }}
+                  <div class="grey--text text--darken-3 font-weight-light">
+                    <div class="ma-1 mb-4">
+                      {{ service.description }}
                     </div>
-                  </v-flex>
+                    <v-flex>
+                      <v-btn color="primary" dark>
+                        entrar
+                      </v-btn>
+                    </v-flex>
+                  </div>
                 </v-card-text>
               </NuxtLink>
             </v-card>
@@ -73,7 +79,7 @@
     <Section id="noticias" class="section pt-0">
       <v-container class="pa-0">
         <div class="pb-13 justify-center text-center">
-          <h2 class="subtitle primary--text">
+          <h2 class="text-h5 font-weight-bold text-uppercase primary--text">
             Últimas notícias
           </h2><p class="ma-0">
             Confira abaixo notícias do portal
@@ -108,7 +114,7 @@
                   </v-row>
                 </template>
               </v-img>
-              <div class="body-1">
+              <div class="headline-s">
                 {{ noticia.title }}
               </div>
             </NuxtLink>

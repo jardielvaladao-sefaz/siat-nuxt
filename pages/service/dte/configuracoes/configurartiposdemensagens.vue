@@ -69,25 +69,25 @@
 
                           <v-row>
                             <v-col cols="4" md="6">
-                              <v-text-field solo label="Descrição*" placeholder="Descrição*" />
+                              <v-text-field outlined label="Descrição*" placeholder="Descrição*" />
                             </v-col>
                             <v-col cols="4" md="6">
-                              <v-select solo :items="items" label="Estilo*" placeholder="Estilo*" />
+                              <v-select outlined :items="items" label="Estilo*" placeholder="Estilo*" />
                             </v-col>
                           </v-row>
 
                           <v-row>
                             <v-col cols="6" md="6">
-                              <v-select solo :items="items" label="Exige Ciência*" placeholder="Exige Ciência*" />
+                              <v-select outlined :items="items" label="Exige Ciência*" placeholder="Exige Ciência*" />
                             </v-col>
                             <v-col cols="6" md="6">
-                              <v-select solo :items="items" label="Permite Resposta*" placeholder="Permite Resposta*" />
+                              <v-select outlined :items="items" label="Permite Resposta*" placeholder="Permite Resposta*" />
                             </v-col>
                             <v-col cols="6" md="6">
-                              <v-select solo :items="items" label="Bloqueia Menu*" placeholder="Bloqueia Menu*" />
+                              <v-select outlined :items="items" label="Bloqueia Menu*" placeholder="Bloqueia Menu*" />
                             </v-col>
                             <v-col cols="6" md="6">
-                              <v-select solo :items="items" label="Envia e-mail*" placeholder="Envia e-mail*" />
+                              <v-select outlined :items="items" label="Envia e-mail*" placeholder="Envia e-mail*" />
                             </v-col>
                           </v-row>
 

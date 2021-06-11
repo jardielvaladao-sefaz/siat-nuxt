@@ -40,11 +40,11 @@
 
             <v-row>
               <v-col cols="6" md="6">
-                <v-select v-model="select" solo :items="items" label="Modo de Envio*" placeholder="Modo de Envio*" />
+                <v-select v-model="select" outlined :items="items" label="Modo de Envio*" placeholder="Modo de Envio*" />
               </v-col>
 
               <v-col cols="6" md="6">
-                <v-select v-model="select" solo :items="items" label="Prioridade*" placeholder="Prioridade*" />
+                <v-select v-model="select" outlined :items="items" label="Prioridade*" placeholder="Prioridade*" />
               </v-col>
 
               <v-col cols="6" md="6">
@@ -59,7 +59,7 @@
                   <template #activator="{ on, attrs }">
                     <v-text-field
                       v-model="date1"
-                      solo
+                      outlined
                       label="Data de Início de Exibição*"
                       class="periodo"
                       placeholder="Data de Início de Exibição*"
@@ -69,7 +69,7 @@
                       v-on="on"
                     />
                   </template>
-                  <v-date-picker v-model="date" solo @input="menu2 = false" />
+                  <v-date-picker v-model="date" outlined @input="menu2 = false" />
                 </v-menu>
               </v-col>
 
@@ -85,7 +85,7 @@
                   <template #activator="{ on, attrs }">
                     <v-text-field
                       v-model="date1"
-                      solo
+                      outlined
                       label="Data Fim de Exibição*"
                       class="periodo"
                       placeholder="Data Fim de Exibição*"
@@ -95,27 +95,27 @@
                       v-on="on"
                     />
                   </template>
-                  <v-date-picker v-model="date" solo @input="menu2 = false" />
+                  <v-date-picker v-model="date" outlined @input="menu2 = false" />
                 </v-menu>
               </v-col>
             </v-row>
 
             <v-row>
               <v-col cols="6" md="12">
-                <v-select v-model="select" solo :items="items" label="Modelo*" placeholder="Modelo*" />
+                <v-select v-model="select" outlined :items="items" label="Modelo*" placeholder="Modelo*" />
               </v-col>
             </v-row>
 
             <v-row>
               <v-col cols="6" md="12">
-                <v-text-field solo label="Assunto*" placeholder="Assunto*" />
+                <v-text-field outlined label="Assunto*" placeholder="Assunto*" />
               </v-col>
             </v-row>
 
             <v-row>
               <v-col cols="6" md="12">
                 <v-textarea
-                  solo
+                  outlined
                   name="input-7-1"
                   label="Mensagem"
                   placeholder="Mensagem"
@@ -129,7 +129,7 @@
               <v-col cols="6" md="12">
                 <v-file-input
                   v-model="files"
-                  solo
+                  outlined
                   placeholder="Importar Anexo da Mensagem"
                   label="Importar Anexo da Mensagem"
                   multiple
@@ -150,7 +150,7 @@
               <v-col cols="6" md="12">
                 <v-file-input
                   v-model="files"
-                  solo
+                  outlined
                   placeholder="Importar Planilha de Mala Direta"
                   label="Importar Planilha de Mala Direta"
                   multiple
@@ -205,10 +205,8 @@
   </Main>
 </template>
 <script>
-import Popover from '../../../../components/Admin/Popover.vue'
 
 export default {
-  components: { Popover },
   layout: 'admin',
   async asyncData ({ params, $axios }) {
     try {

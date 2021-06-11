@@ -66,7 +66,7 @@
                         <v-card-text>
                           <small>* campos obrigatórios</small>
                           <v-divider class="mb-10" />
-                          <v-text-field label="Assunto *" placeholder="Assunto *" solo />
+                          <v-text-field label="Assunto *" placeholder="Assunto *" outlined />
                           <v-row>
                             <v-col cols="6" md="12">
                               <v-spacer />

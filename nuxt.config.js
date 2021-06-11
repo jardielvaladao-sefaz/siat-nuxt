@@ -1,8 +1,12 @@
+
 import colors from 'vuetify/lib/util/colors'
+import development from './.env.js'
+import production from './.env.prod.js'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   ssr: false, // false for SPA on Netlify default is true
   target: 'static', // static for SPA on Netlify default is 'server'
+  env: process.env.NODE_ENV === 'production' ? production : development,
   head: {
     title: 'Portal de serviços SIAT / SEFAZ-PI',
     htmlAttrs: {
@@ -73,9 +77,6 @@ export default {
   },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    ['@nuxtjs/dotenv', {
-      filename: process.env.NODE_ENV === 'production' ? './.env.prod' : './.env'
-    }],
     ['@nuxtjs/axios', {
       baseURL: process.env.BASE_URL
     }],
@@ -87,7 +88,7 @@ export default {
       theme: {
         themes: {
           light: {
-            primary: '#004e5d', // #004e5d
+            primary: '#044f6f', // #004e5d
             secondary: colors.grey.darken4, // #212121
             accent: colors.indigo.base, // #3F51B5
             error: colors.red.darken3, // #C62828

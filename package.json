@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.5",
-    "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/svg": "^0.1.12",
     "core-js": "^3.8.2",

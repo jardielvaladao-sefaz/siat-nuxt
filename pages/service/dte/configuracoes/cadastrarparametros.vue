@@ -66,9 +66,9 @@
                         <v-card-text>
                           <small>* campos obrigatórios</small>
                           <v-divider class="mb-10" />
-                          <v-text-field label="Nome *" placeholder="Nome *" solo />
-                          <v-text-field label="Descrição *" placeholder="Descrição *" solo />
-                          <v-select :items="items" label="Ativo *" placeholder="Ativo *" solo />
+                          <v-text-field label="Nome *" placeholder="Nome *" outlined />
+                          <v-text-field label="Descrição *" placeholder="Descrição *" outlined />
+                          <v-select :items="items" label="Ativo *" placeholder="Ativo *" outlined />
                           <v-row>
                             <v-col cols="6" md="12">
                               <v-spacer />
