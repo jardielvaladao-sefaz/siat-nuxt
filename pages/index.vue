@@ -59,7 +59,7 @@
                     {{ service.name }}
                   </h3>
                   <div class="grey--text text--darken-3 font-weight-light">
-                    <div class="ma-1 mb-4">
+                    <div class="ma-2 mb-4">
                       {{ service.description }}
                     </div>
                     <v-flex>
