@@ -1,6 +1,21 @@
 <template>
   <Main>
-    <Menu :titulo="title" :versao="service.version" />
+    <v-navigation-drawer app permanent>
+      <v-list-item class="primary service-name" dark>
+        <v-list-item-content>
+          <v-list-item-title class="subtitle text-uppercase">
+            {{ title }}
+          </v-list-item-title>
+          <v-list-item-subtitle>
+            v{{ service.version }}
+          </v-list-item-subtitle>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-divider />
+
+      <Menu />
+    </v-navigation-drawer>
     <v-container>
       <div class="pt-4 pa-8">
         <v-breadcrumbs large :items="breadcrumbs" class="pl-0 ml-0" />
@@ -131,6 +146,7 @@
 </template>
 <script>
 export default {
+  layout: 'admin',
   async asyncData ({ params, $axios }) {
     try {
       let title = ''

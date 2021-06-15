@@ -1,0 +1,86 @@
+<template>
+  <v-navigation-drawer v-model="drawer" app permanent>
+    <v-list-item class="primary service-name" dark>
+      <v-list-item-content>
+        <v-list-item-title class="subtitle text-uppercase">
+          {{ titulo }}
+        </v-list-item-title>
+        <v-list-item-subtitle>
+          v{{ versao }}
+        </v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item>
+    <v-divider />
+    <v-list
+      dense
+      nav
+    >
+      <v-list-group
+        v-for="item in menu"
+        :key="item.title"
+        v-model="item.active"
+        :prepend-icon="item.icon"
+      >
+        <template #activator>
+          <v-list-item-content>
+            <v-list-item-title v-text="item.title" />
+          </v-list-item-content>
+        </template>
+
+        <v-list-item
+          v-for="child in item.items"
+          :key="child.title"
+          :to="`/service/dte/${child.href}`"
+          :title="child.title"
+          prefetch
+        >
+          <v-list-item-content>
+            <v-list-item-title v-text="child.title" />
+          </v-list-item-content>
+        </v-list-item>
+      </v-list-group>
+    </v-list>
+  </v-navigation-drawer>
+</template>
+<script>
+export default {
+  props: {
+    titulo: {
+      type: String,
+      required: true
+    },
+    versao: {
+      type: String,
+      required: true
+    }
+  },
+  data () {
+    return {
+      menu: [
+        {
+          icon: 'mdi-message-text-outline',
+          active: true,
+          items: [
+            { title: 'Enviar Mensagem', href: 'mensagens/enviarmensagem' },
+            { title: 'Consultar Mensagens', href: 'mensagens/consultarmensagens' },
+            { title: 'Consultar Mensagens - Destinatário', href: 'mensagens/consultarmensagensdestinatario' }
+          ],
+          title: 'Mensagens'
+        },
+        {
+          icon: 'mdi-cog-outline',
+          active: true,
+          items: [
+            { title: 'Cadastrar Parâmetros', href: 'configuracoes/cadastrarparametros' },
+            { title: 'Configurar Tipos de Mensagens', href: 'configuracoes/configurartiposdemensagens' },
+            { title: 'Cadastrar Modelo de Mensagens', href: 'configuracoes/cadastrarmodelodemensagens' }
+          ],
+          title: 'Configurações'
+        }
+      ],
+      drawer: false,
+      group: null
+    }
+  }
+}
+</script>

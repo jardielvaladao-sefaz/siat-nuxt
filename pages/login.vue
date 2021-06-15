@@ -83,7 +83,6 @@
 </template>
 <script>
 export default {
-  layout: 'page',
   data () {
     return {
       title: 'Login'

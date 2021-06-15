@@ -23,6 +23,15 @@
   "status": "1"
   },
   {
+  "name": "NUXT",
+  "version": "1.0.0",
+  "releaseDate": "2021-06-15",
+  "description": "...",
+  "image": "/images/026-search.svg",
+  "link": "nuxt",
+  "status": "1"
+  },
+  {
   "name": "SERVICE 01",
   "version": "1.0.1",
   "releaseDate": "2021-06-01",
