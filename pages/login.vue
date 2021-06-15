@@ -20,8 +20,8 @@
                 id="form-login"
                 name="form-login"
                 method="POST"
-                redirect="/painel"
-                action="/painel"
+                redirect="/admin"
+                action="/admin"
               >
                 <p class="body-1">
                   ACESSE AGORA COM CERTIFICADO
@@ -43,8 +43,8 @@
                 id="wf-form-login"
                 name="wf-form-login"
                 method="POST"
-                redirect="/painel"
-                action="/painel"
+                redirect="/admin"
+                action="/admin"
               >
                 <v-text-field name="login" label="Login" required outlined />
                 <v-text-field name="code" label="Código de acesso" required outlined />

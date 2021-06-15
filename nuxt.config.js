@@ -8,7 +8,7 @@ export default {
   target: 'static', // static for SPA on Netlify default is 'server'
   env: process.env.NODE_ENV === 'production' ? production : development,
   head: {
-    title: 'Portal de serviços SIAT / SEFAZ-PI',
+    title: 'DT-E / SEFAZ-PI',
     htmlAttrs: {
       lang: 'pt-br'
     },
@@ -67,11 +67,11 @@ export default {
   },
   pwa: {
     meta: {
-      title: 'SIAT WEB',
+      title: 'DT-E',
       author: 'SEFAZ-PI'
     },
     manifest: {
-      name: 'SIAT WEB / SEFAZ-PI',
+      name: 'DT-E / SEFAZ-PI',
       lang: 'pt-br'
     }
   },

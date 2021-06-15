@@ -7,14 +7,9 @@
       min-height="78"
       height="78"
     >
-      <v-toolbar-title class="d-flex justify-content">
-        <NuxtLink to="/" aria-current="page" class="logo white--text d-inline-flex align-center justify-content">
-          <img src="/images/logo.png" width="234" alt="" class="image">
-          <h1 class="title-s">
-            SIAT WEB
-          </h1>
-        </NuxtLink>
-      </v-toolbar-title>
+      <v-app-bar-nav-icon @click.stop="toggleDrawer()" />
+
+      <Logo />
 
       <v-spacer />
 
@@ -63,7 +58,7 @@
             v-bind="attrs"
             v-on="on"
           >
-            LOGIN USERNAME
+            NOME USUÁRIO
             <v-icon right>
               mdi-chevron-down
             </v-icon>
@@ -104,15 +99,12 @@ export default {
     titulo: {
       type: String,
       default: ''
-    },
-    menu: {
-      type: String,
-      default: ''
     }
   },
-  data: () => ({
-    drawer: false,
-    group: null
-  })
+  methods: {
+    toggleDrawer () {
+      this.$store.commit('toggleDrawer')
+    }
+  }
 }
 </script>

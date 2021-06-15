@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer v-model="drawer" app permanent>
+  <v-navigation-drawer id="appDrawer" v-model="drawer" app fixed>
     <v-list-item class="primary service-name" dark>
       <v-list-item-content>
         <v-list-item-title class="subtitle text-uppercase">
@@ -30,7 +30,7 @@
         <v-list-item
           v-for="child in item.items"
           :key="child.title"
-          :to="`/service/dte/${child.href}`"
+          :to="child.href"
           :title="child.title"
           prefetch
         >
@@ -45,6 +45,10 @@
 <script>
 export default {
   props: {
+    expanded: {
+      type: Boolean,
+      default: true
+    },
     titulo: {
       type: String,
       required: true
@@ -58,29 +62,42 @@ export default {
     return {
       menu: [
         {
-          icon: 'mdi-message-text-outline',
+          icon: 'mdi-text-box-outline',
           active: true,
           items: [
-            { title: 'Enviar Mensagem', href: 'mensagens/enviarmensagem' },
-            { title: 'Consultar Mensagens', href: 'mensagens/consultarmensagens' },
-            { title: 'Consultar Mensagens - Destinatário', href: 'mensagens/consultarmensagensdestinatario' }
+            { title: 'Sobre o módulo', href: '/' }
           ],
-          title: 'Mensagens'
+          title: 'Apresentação'
         },
         {
-          icon: 'mdi-cog-outline',
+          icon: 'mdi-text-box-outline',
           active: true,
           items: [
-            { title: 'Cadastrar Parâmetros', href: 'configuracoes/cadastrarparametros' },
-            { title: 'Configurar Tipos de Mensagens', href: 'configuracoes/configurartiposdemensagens' },
-            { title: 'Cadastrar Modelo de Mensagens', href: 'configuracoes/cadastrarmodelodemensagens' }
+            { title: 'Manuais e legislação', href: '/' }
           ],
-          title: 'Configurações'
+          title: 'Instruções'
         }
-      ],
-      drawer: false,
-      group: null
+      ]
+    }
+  },
+  computed: {
+    drawer: {
+      get () {
+        return this.$store.state.drawer
+      },
+      set (val) {
+        this.$store.commit('drawer', val)
+      }
     }
   }
 }
 </script>
+<style scoped>
+  #appDrawer {
+    overflow: hidden;
+  }
+  .drawer-menu--scroll{
+    height: 56vh;
+    overflow: auto;
+  }
+</style>
